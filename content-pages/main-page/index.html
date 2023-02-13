@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Продакшн-студия полного цикла BulbaMedia. Создание аудио, видео контента. Создание и ведение TikTok аккаунтов.">
+    <meta name="keywords" content="создание видео контента, съемка видео, создание анимированных роликов, съемка с дрона, звукозапись, менеджер тикток, ведение аккаунтов, рекламные ролики">
+    <meta property="og:url" content="https://bulbamedia.com">
+    <meta property="og:title" content="BulbaMedia — продакшн-студия полного цикла.">
+    <meta property="og:description" content="Продакшн-студия полного цикла BulbaMedia. Создание аудио, видео контента. Создание и ведение TikTok аккаунтов">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://drive.google.com/file/d/1eZOE1cZthgJkWt5rzdPVsi56eeT2svc2/view?usp=sharing">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="../bulba-additions/logo-favicon.svg">
+    <link rel="stylesheet" href="light-mode-styles.css"/>
+    <link rel="stylesheet" href="light-mode-styles.css" id="theme"/>
+    <script defer src="script.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <title>BulbaMedia</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="../bulba-additions/logobulba.svg" alt="logo">
+          </a>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link font-pt" href="#aboutUs">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-pt" href="#services">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-pt" href="#works">Работы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-pt" href="#clients">Клиенты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-pt" href="#contacts">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link phone-number font-pt" href="tel:+375296139381">+375 29 613-93-81</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <label>
+        <input type="checkbox" id="switchMode">
+        <span class="check"></span>
+      </label>
+    </nav>
+
+    <div class="video-box">
+      <video autoplay muted loop>
+        <source src="../bulba-additions/videoplayback.mp4" />
+      </video>
+      <div class="video-text-content">
+        <h1 class="font-int">
+          Продакшн-студия полного
+          <br />
+          <br />
+          цикла BulbaMedia
+          <br />
+          <br />
+        </h1>
+        <div class="video-text-info smoothie font-int">
+          Создание аудио, видео контента. Создание и ведение TikTok аккаунтов.
+        </div>
+        <button id="toDiscuss" class="font-int" onclick="document.location='#contacts'">ОБСУДИТЬ ПРОЕКТ</button>
+      </div>
+    </div>
+
+    <div id="aboutUs" class="aboutUs-container">
+      <div class="aboutUs-text">
+        <h1>О нас</h1>
+        <p class="smoothie">
+          BulbaMedia предлагает высококачественные услуги по созданию
+          видео-контента для брендов и компаний в Республике Беларусь. Мы -
+          молодая креативная команда, способная предложить нестандартные решения
+          для продвижения продуктов, компаний, брендов. Мы умеем: придумывать,
+          анализировать, снимать, монтировать, создавать, писать музыку.
+        </p>
+      </div>
+      <div class="aboutUs-img">
+        <div class="aboutUs-text-2">
+          <h1>О нас</h1>
+          <p>
+            BulbaMedia предлагает высококачественные услуги по созданию
+            видео-контента для брендов и компаний в Республике Беларусь. Мы -
+            молодая креативная команда, способная предложить нестандартные решения
+            для продвижения продуктов, компаний, брендов. Мы умеем: придумывать,
+            анализировать, снимать, монтировать, создавать, писать музыку.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section id="services" class="services">
+      <h1>Услуги</h1>
+      <div class="services-content">
+        <div class="services-img img1">
+          <div class="service-img-text-container smoothie">
+            <h3>Создание аудио контента</h3>
+            <button id="moreInfo" onclick="document.location='../audio-content-page/audio-index.html'">Подробнее</button>
+          </div>
+        </div>
+        <div class="services-img img2">
+          <div class="service-img-text-container smoothie">
+            <h3>Создание видео контента</h3>
+            <button id="moreInfo" onclick="document.location='../video-content-page/video-index.html'">Подробнее</button>
+          </div>
+        </div>
+        <div class="services-img img3">
+          <div class="service-img-text-container smoothie">
+            <h3>Создание и ведение TikTok аккаунта</h3>
+            <button id="moreInfo" onclick="document.location='../tiktok-content-page/tiktok-index.html'">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="slider">
+    <h1>Наши работы</h1>
+    <div class="wrapper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/JRNVqyqHDDo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew1.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/Ij12sC6IW1w"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew2.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/z0rLs2ff8Qs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew3.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/Jdi9s6DMmN8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew4.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/fNASzM1pnQA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew5.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/F_AHYqUFEqo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew6.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/j97-HGPdTTA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew7.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/lISf78xQy3w"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew8.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/5D3zqYyNu5o"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew9.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/-J3SKvo9ZZU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew10.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/PYEn-72sn7Q"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="preview">
+              <img src="thumbnails/prew11.png" class="thumbnail" />
+              <img src="../bulba-additions/player-button-img.svg" class="player-button" />
+            </div>
+          </div>
+        </div>
+        <div id="next" class="swiper-button-next"></div>
+        <div id="prev" class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper textSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Ролик для Apple iPad</div>
+          <div class="swiper-slide">Имиджевый ролик МТБанк</div>
+          <div class="swiper-slide">Имиджевый ролик АртПорт галереи</div>
+          <div class="swiper-slide">Ролик для Альфа-Банка</div>
+          <div class="swiper-slide">Видео для Caersidi</div>
+          <div class="swiper-slide">Видео для встречи клуба Про бизнес</div>
+          <div class="swiper-slide">Реклама нового меню рестрана GanBei</div>
+          <div class="swiper-slide">Ролик для Бизнес-пробуждения 5.0</div>
+          <div class="swiper-slide">
+            Имиджевый ролик для сети магазинов 7 пятниц
+          </div>
+          <div class="swiper-slide">Видео для Grill Box 4 in 1</div>
+          <div class="swiper-slide">Видео для кузнеца</div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="partners">
+      <h1 class="partners-projects">Партнерские проекты</h1>
+      <div class="partner-container">
+        <div class="partner-item">
+          <img src="../bulba-additions/alphabank-dark.png" alt="" />
+          <div class="partner-item-content">
+            <div class="partner-name">Бизнес пробуждение</div>
+            <div class="partner-description smoothie">
+              Масштабный практический бизнес форум Бизнес-Пробуждение 5.0
+            </div>
+            <div>
+              <a class="moreInfo" href="">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="partner-item">
+          <img src="../bulba-additions/partners-2.svg" alt="" />
+          <div class="partner-item-content">
+            <div class="partner-name">Про бизнес</div>
+            <div class="partner-description">
+              Нетворкинг и обмен знаниями, ресурсами для собственников и
+              руководителей бизнеса.
+            </div>
+            <div>
+              <a class="moreInfo" href="">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="partner-item">
+          <h3 class="partner-finClub">
+            <strong class="toGreen">Fin</strong><strong>Club</strong>
+          </h3>
+          <div class="partner-item-content">
+            <div class="partner-name">FinClub</div>
+            <div class="partner-description">
+              Членами клуба являются профессионалы с многолетним опытом и
+              начинающие инвесторы.
+            </div>
+            <div>
+              <a class="moreInfo" href="">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="partner-item">
+          <img src="../bulba-additions/partners-3.svg" alt="" />
+          <div class="partner-item-content">
+            <div class="partner-name">Visa Platinum</div>
+            <div class="partner-description">
+              Программа лояльности. Выгодные условия приобретения товаров и
+              услуг от партнеров программы.
+            </div>
+            <div>
+              <a class="moreInfo" href="">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="clients">
+      <h1 class="our-clients">Наши клиенты</h1>
+      <div class="clients-container">
+        <div class="client-content">
+          <img src="../bulba-additions/client-1.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-2.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-3.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-4.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-5.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-6.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-7.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-8.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-9.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-10.svg" alt="" />
+        </div>
+        <div class="client-content">
+          <img src="../bulba-additions/client-11.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="leave-your-contacts">
+      <div class="contacts-container">
+        <h1>
+          Будем рады<br />
+          сотрудничеству
+        </h1>
+        <div class="our-contacts">
+          <h2>
+            <a class="phone-number" href="tel:+375 29 613-93-81"
+              >+375 29 613-93-81</a
+            >
+          </h2>
+          <h3>
+            <a href="mailto:bulbamedia@mail.ru">bulbamedia@mail.ru</a>
+          </h3>
+        </div>
+        <form class="form" action="">
+          <label for="name">Ваше имя</label><br />
+          <input type="text" id="name" name="name" required minlength="1" maxlength="15" placeholder="Александр" />
+          <label for="phone">Телефон</label><br />
+          <div class="phone-container">
+            <div class="country-select">
+              <div id="country-select" class="country-select__code">
+                <div class="country">
+                  <img id="country-flag" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg">
+                  <div class="arrow"></div>
+                </div>
+                <div id="phone-code" class="phone-code">+421</div>
+              </div>
+              <div id="modal" class="country-select__modal">
+                
+              </div>
+            </div>
+            <input type="number" id="phone" name="phone" required placeholder="(99) 999-99-99" />
+          </div>
+          <label for="email">Эл.почта</label><br />
+          <input type="email" id="email" name="email" required placeholder="primer@gmail.com" />
+          <label for="comment">Комментарий</label><br />
+          <input type="text" id="comment" name="comment" minlength="1" maxlength="250" placeholder="Что нужно сделать?" />
+            <button id="toSend" class="smoothie">Отправить</button>
+        </form>
+      </div>
+      <div class="contacts-img"></div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a class="smoothie" href="index.html">BulbaMedia — продакшн-студия полного цикла.</a>
+        <a class="smoothie" href="../audio-content-page/audio-index.html">Создание аудио контента</a>
+        <a class="smoothie" href="../video-content-page/video-index.html">Создание видео контента</a>
+        <a class="smoothie" href="../tiktok-content-page/tiktok-index.html">Создание и ведение Tik Tok аккаунта</a>
+      </div>
+      <div class="footer-img">
+        <a href="index.html"></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>
