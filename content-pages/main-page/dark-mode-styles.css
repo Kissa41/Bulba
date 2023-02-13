@@ -1,0 +1,53 @@
+:root{
+    --var-body-dark-bg: #303030;
+    --var-body-dark-fc: #FFF;
+    --var-card-dark-bg: #262626;
+    --var-main-fc: #fb1e53;
+}
+body{
+    background-color: var(--var-body-dark-bg);
+    color: var(--var-body-dark-fc);
+    transition: all .3s ease;
+}
+.partner-item, .service-img-text-container{
+    background-color: var(--var-card-dark-bg);
+}
+.nav-link{
+    color: var(--var-body-dark-fc);
+}
+.phone-number{
+    color: var(--var-main-fc);
+}
+.phone-number:hover, .nav-link:hover{
+    color: var(--var-body-dark-fc);
+}
+.swiper-pagination-bullet{
+    background-color: var(--var-body-dark-fc);
+}
+.swiper-pagination-bullet-active {
+    background: var(--var-main-fc);
+}
+.our-contacts h3 a{
+    color: var(--var-body-dark-fc);
+}
+.phone-code{
+    color: var(--var-body-dark-fc);
+}
+.country-select__modal{
+    background-color: var(--var-card-dark-bg);
+    border: 1px solid #131313;
+}
+.country-select__modal-item:hover{
+    color: var(--var-body-dark-fc);
+    background-color: var(--var-body-dark-bg);
+}
+#name, #email, #comment, .phone-container{
+    background-color: var(--var-card-dark-bg);
+}
+.arrow{
+    height: 7px;
+    background-image: url(../bulba-additions/arrow-dark.svg);
+}
+.footer-links a{
+    color: #a4a4a4;
+}
