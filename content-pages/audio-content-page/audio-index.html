@@ -10,7 +10,9 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
     crossorigin="anonymous"/>
     <link rel="stylesheet" href="audio-style.css">
+    <link rel="stylesheet" href="audio-style.css" id="theme"/>
     <link rel="icon" type="image/x-icon" href="../bulba-additions/logo-favicon.svg">
+    <script defer src="audio-script.js"></script>
     <script defer src="../main-page/script.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -25,6 +27,13 @@
             <a class="navbar-brand" href="../main-page/index.html">
               <img src="../bulba-additions/logobulba.svg" alt="logo">
             </a>
+          </div>
+          <div class="theme theme-2">
+            <label>
+              <input type="checkbox" id="switchMode">
+              <span class="check"></span>
+            </label>
+            <div class="theme-icon"></div>
           </div>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="toggler-icon top-bar"></span>
@@ -53,6 +62,13 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="theme">
+          <label>
+            <input type="checkbox" id="switchMode">
+            <span class="check"></span>
+          </label>
+          <div class="theme-icon"></div>
         </div>
       </nav>
 
@@ -93,9 +109,8 @@
             <div class="phone-container">
               <div id="country-select" class="country-select">
                 <div class="country">
-                  <img src="../bulba-additions/slovak-flag.svg">
-                  <img src="../bulba-additions/arrow.svg" class="arrow"></img>
-  
+                  <img id="country-flag" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg">
+                  <div class="arrow"></div>
                 </div>
                 <div class="phone-code">+421</div>
                 <div id="modal" class="country-select__modal">

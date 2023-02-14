@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: rgb(21, 21, 21);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.brief{
+    max-width: 760px;
+    width: 100%;
+    height: 123vh;
+    border: 15px solid #fb1e53;
+    padding: 65px 45px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 30%);
+    margin: 150px auto 0;
+}
+.brief-description, .brief-name{
+    text-align: center;
+}
+.brief-description{
+    font-size: 22px; 
+}
+.brief-name{
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0;
+}
+.brief-form{
+    height: 90%;
+    width: 85%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#company-name, 
+#name,
+#email,
+#phone,
+#description,
+#budget{
+    width: 100%;
+    height: 56px;
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.brief-label{
+    font-size: 18px;
+}
+#toSend{
+    margin: auto;
+    width: 116px;
+    height: 56px;
+    background-color: #5eb304;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-footer{
+    padding-top: 20px;
+    font-size: 13px;
+}
+.form-footer, .brief-label, .brief-description{
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}

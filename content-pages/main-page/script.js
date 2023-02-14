@@ -58,28 +58,6 @@ function readTextFile(file)
     })
 }
 
-let switchMode = document.getElementById("switchMode");
-const darkmode = localStorage.getItem('darkmode');
-const theme = document.getElementById("theme");
-
-if (darkmode !== undefined) {
-    theme.href = darkmode ? "dark-mode-styles.css" : 'light-mode-styles.css';
-    switchMode.setAttribute('checked', darkmode);
-}
-
-switchMode.addEventListener('click', function () { 
-
-    let theme = document.getElementById("theme");
-    
-    if (theme.getAttribute("href") == "light-mode-styles.css") {
-        theme.href = "dark-mode-styles.css";
-        localStorage.setItem('darkmode', true);
-    }else{
-        theme.href = "light-mode-styles.css";
-        localStorage.setItem('darkmode', false);
-    }
-})
-
 
 
 

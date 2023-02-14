@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="brief-style.css">
     <title>Brief</title>
 </head>
 <body>
     
+    <section class="brief">
+        <h1 class="brief-name">Brief</h1>
+        <h3 class="brief-description">Take answer for questions about the future project. Our manager will contact you during the day.</h3>
+        <form class="brief-form" action="">
+          <label class="brief-label" for="company-name">Company name</label><br />
+          <input type="text" id="company-name" name="company-name" required minlength="1" maxlength="31" placeholder="Coca-cola" />
+          <label class="brief-label" for="name">Your name</label><br />
+          <input type="text" id="name" name="name" required minlength="1" maxlength="15" placeholder="Uladislav"/>
+          <label class="brief-label" for="email">Your email</label><br />
+          <input type="email" id="email" name="email" required minlength="1" maxlength="31" placeholder="example@gmail.com" />
+          <label class="brief-label" for="phone">Company name</label><br />
+          <input type="tel" id="phone" name="phone" required minlength="1" maxlength="14" placeholder="+421-000-00-00" />
+          <label class="brief-label" for="description">Company name</label><br />
+          <input type="text" id="description" name="description" required minlength="1" maxlength="31" placeholder="What do you want to do?" />
+          <label class="brief-label" for="budget">Whats your budget?</label><br />
+          <input type="text" id="budget" name="budget" required minlength="1" maxlength="31" />
+          <button id="toSend">Send</button>
+        </form>
+        <div class="form-footer">By clicking on the button, you consent to the processing of personal data and agree with the privacy policy</div>
+    </section>
+
+
 </body>
 </html>
