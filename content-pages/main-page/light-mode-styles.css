@@ -44,7 +44,7 @@ nav .phone-number {
 
 .container-fluid {
     width: 70%;
-    margin: 0 !important;
+    margin: 0 auto !important;
 }
 
 .navbar-nav {
@@ -203,12 +203,10 @@ input[type="checkbox"]:checked ~ .check:after{
     width: 65px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px 0 9%;
-}
-.theme-2{
-    display: none;
+    margin-left: 9%;
 }
 .theme-icon{
+    margin-left: 7px;
     width: 16px;
     height: 16px;
     background-image: url(../bulba-additions/moon-icon.svg);
@@ -783,7 +781,8 @@ footer,
 .country{
     display: flex;
     align-items: center;
-    width: 40px;
+    width: 45px;
+    padding-left: 10px;
 }
 .arrow {
     width: 10px;
@@ -842,7 +841,7 @@ footer {
 
 @media screen and (max-width: 1500px) {
     .container-fluid {
-        width: 80%;
+        width: 83%;
     }
     .video-box video {
         height: 100%;
@@ -876,9 +875,6 @@ footer {
         height: 100%;
         width: auto;
     }
-    .theme{
-        margin: 0 30px 0 3%;
-    }
 }
 
 @media screen and (max-width: 955px) {
@@ -890,9 +886,14 @@ footer {
 
 @media screen and (min-width: 600px) and (max-width: 1250px) {
     .container-fluid {
-        width: 95%;
+        width: 100%;
     }
-
+    .theme{
+        margin-left: 7%;
+    }
+    .navbar-nav{
+        column-gap: 33px;
+    }
     .video-text-content h1 {
         font-size: 48px;
     }
@@ -1005,8 +1006,14 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .theme{
+        margin: 0 20px 0 0;
+    }
     .slider h1 {
         width: 760px;
+    }
+    .navbar-toggler {
+        order: 1;
     }
     .partner-description{
         font-size: 16px;
@@ -1014,6 +1021,7 @@ footer {
     }
     #navbarSupportedContent {
         padding: 30px 0;
+        order: 1;
     }
 
     .nav-item {
@@ -1033,15 +1041,7 @@ footer {
     .clients {
         width: 560px;
     }
-    .theme{
-        display: none;
-    }
-    .theme-2{
-        display: block;
-        margin: 0;
-        display: flex;
-        margin-right: 5%;
-    }
+
 }
 @media screen and (max-width: 761px) {
     .slider h1 {

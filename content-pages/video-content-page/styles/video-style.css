@@ -30,6 +30,9 @@ nav .phone-number {
     display: flex;
     justify-content: end;
 }
+.container-fluid {
+    margin: 0 auto !important;
+}
 .container-fluid, .video-content{
     width: 70%;
     padding: 0;
@@ -192,15 +195,13 @@ input[type="checkbox"]:checked ~ .check:after{
     width: 65px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px 0 9%;
-}
-.theme-2{
-    display: none;
+    margin-left: 8%;
 }
 .theme-icon{
+    margin-left: 7px;
     width: 16px;
     height: 16px;
-    background-image: url(../bulba-additions/moon-icon.svg);
+    background-image: url(/content-pages/bulba-additions/moon-icon.svg);
 }
 .video-content{
     width: 1175px;
@@ -211,7 +212,7 @@ input[type="checkbox"]:checked ~ .check:after{
     flex-direction: column;
 }
 .video-img{
-    background-image: url(../bulba-additions/video-content.jpeg);
+    background-image: url(/content-pages/bulba-additions/video.jpeg);
     width: 602px;
     height: 409px;
     background-size: cover;
@@ -242,7 +243,7 @@ input[type="checkbox"]:checked ~ .check:after{
     padding-top: 20px;
 }
 ul{
-    list-style-image: url(../bulba-additions/logo-favicon.svg);
+    list-style-image: url(/content-pages/bulba-additions/logo-favicon.svg);
 }
 li{
     padding-left: 10px;
@@ -385,6 +386,8 @@ li{
 
 .country-select__modal-item__phone img {
     height: 15px;
+    width: 21px;
+    margin-top: 4px;
 }
 
 .country{
@@ -396,7 +399,7 @@ li{
 .arrow {
     width: 10px;
     height: 6px;
-    background-image: url(../bulba-additions/arrow.svg);
+    background-image: url(/content-pages/bulba-additions/arrow.svg);
     background-size: cover;
     margin-left: 5px;
 }
@@ -404,22 +407,24 @@ li{
 .phone-code {
     width: 33px;
     height: 23px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 #toSend {
     width: 100%;
     height: 55px;
     margin-top: 25px;
+    font-weight: 500;
 }
 
 footer {
-    padding-top: 61px;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .footer-links {
@@ -436,22 +441,36 @@ footer {
     padding: 0 15px;
     text-decoration: none;
     color: black;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .footer-img{
     width: 130px;
     height: 74px;
-    background-image: url(../bulba-additions/logobulba.svg);
+    background-image: url(/content-pages/bulba-additions/logobulba.svg);
     background-size: cover;
 }
 @media screen and (max-width: 1500px) {
-    .container-fluid, .video-content{
+    .container-fluid{
+        width: 83%;
+    }
+    .video-content{
      width: 80%;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1250px){
-    .container-fluid, .video-content{
+    .video-content{
     width: 90%;
+    }
+     .container-fluid {
+        width: 100%;
+    }
+    .theme{
+        margin-left: 7%;
+    }
+    .navbar-nav{
+        column-gap: 33px;
     }
    .leave-your-contacts{
     width: 600px;
@@ -490,13 +509,19 @@ footer {
     }
 }
 @media screen and (max-width: 991px) {
+    .theme{
+        margin: 0 20px 0 0;
+    }
     .nav-item{
         padding-top: 15px;
     }
-        #navbarSupportedContent {
-        padding: 30px 0;
+    #navbarSupportedContent {
+    padding: 30px 0;
+    order: 1;
     }
-
+    .navbar-toggler {
+        order: 1;
+    }
     .nav-item {
         text-align: center;
     }
@@ -507,15 +532,6 @@ footer {
 
     .phone-number {
         padding-top: 30px;
-    }
-    .theme{
-        display: none;
-    }
-    .theme-2{
-        display: block;
-        margin: 0;
-        display: flex;
-        margin-right: 5%;
     }
 }
 @media screen and (max-width: 600px){
@@ -561,12 +577,12 @@ footer {
         font-size: 18px;
     }
     ul{
-        list-style-image: url(../bulba-additions/small-favicon-img.svg);
+        list-style-image: url(/content-pages/bulba-additions/small-favicon-img.svg);
     }
     .video-img{
         width: 320px;
         height: 350px;
-        background-position: left top;
+        background-position: center;
     }
     .video-content{
         padding-top: 30px;
@@ -574,6 +590,7 @@ footer {
     .video-content-header{
         padding-top: 70px;
         width: 100%;
+        padding-left: 30px;
     }
     .video-content, .video-content-list{
         flex-direction: column;
@@ -587,10 +604,5 @@ footer {
     }
     .second-list{
         margin-top: -15px;
-    }
-}
-@media screen and (max-width: 1250px) {
-    .theme{
-        margin: 0 30px 0 3%;
     }
 }

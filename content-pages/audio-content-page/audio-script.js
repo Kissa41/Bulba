@@ -1,21 +1,22 @@
-let switchMode = document.getElementById("switchMode");
-const darkmode = localStorage.getItem('darkmode');
+const th = document.getElementById("switchMode");
+const darkmode = localStorage.getItem('theme');
 const theme = document.getElementById("theme");
 
-if (darkmode !== undefined) {
-    theme.href = darkmode ? "../main-page/dark-mode-styles.css" : 'audio-style.css';
-    switchMode.setAttribute('checked', darkmode);
+if (darkmode) {
+    theme.href = darkmode === 'dark' ? "../main-page/dark-mode-styles.css" : './styles/audio-style.css';
 }
 
-switchMode.addEventListener('click', function () { 
+const changeTheme = () => { 
+  let theme = document.getElementById("theme");
+  const themeState = localStorage.getItem('theme');
+  console.log(themeState);
+  if (themeState === 'light') {
+    theme.href = "../main-page/dark-mode-styles.css";
+    localStorage.setItem('theme', 'dark');
+  } else {
+    theme.href = "./styles/audio-style.css";
+    localStorage.setItem('theme', 'light');
+  }
+}
 
-    let theme = document.getElementById("theme");
-    
-    if (theme.getAttribute("href") == "audio-style.css") {
-        theme.href = "../main-page/dark-mode-styles.css";
-        localStorage.setItem('darkmode', true);
-    }else{
-        theme.href = "audio-style.css";
-        localStorage.setItem('darkmode', false);
-    }
-})
+th.addEventListener('click', changeTheme);
