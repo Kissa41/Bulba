@@ -1009,6 +1009,9 @@ footer {
     .theme{
         margin: 0 20px 0 0;
     }
+    .container-fluid{
+        padding: 0 20px;
+    }
     .slider h1 {
         width: 760px;
     }

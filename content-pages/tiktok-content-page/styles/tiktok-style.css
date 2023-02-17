@@ -446,6 +446,9 @@ footer {
     }
 }
 @media screen and (max-width: 991px) {
+    .container-fluid{
+        padding: 0 20px;
+    }
     .theme{
         margin: 0 20px 0 0;
     }
