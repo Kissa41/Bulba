@@ -53,4 +53,6 @@ body{
 }
 .theme-icon{
     background-image: url(../bulba-additions/sun-icon.svg);
+}input{
+    color: var(--var-body-dark-fc);
 }

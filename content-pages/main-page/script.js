@@ -34,7 +34,7 @@ function createCountry(code, name, flagURL) {
     modal.appendChild(country)
     country.addEventListener('click', (e) => {
         modal.classList.toggle('country-select__modal-open')
-        phoneElement.innerText = code
+        phoneElement.innerText = code;
         flagElement.setAttribute('src', flagURL)
     })
 }
