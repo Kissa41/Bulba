@@ -4,7 +4,7 @@ const phoneElement = document.getElementById('phone-code')
 const inputPhoneElement = document.getElementById('phone')
 const flagElement = document.getElementById('country-flag')
 
-readTextFile('../bulba-additions/countries.json').then((res) => {
+readTextFile('/assets/countries.json').then((res) => {
     const countries = JSON.parse(res)
     countries.forEach(country => {
         createCountry(country.number, country.name, country.flag)
@@ -58,6 +58,28 @@ function readTextFile(file)
     })
 }
 
+const th = document.getElementById("switchMode");
+const darkmode = localStorage.getItem('theme');
+const theme = document.getElementById("theme");
+
+if (darkmode) {
+    theme.href = darkmode === 'dark' ? "/styles/dark-mode-styles.css" : '/styles/light-mode-styles.css';
+}
+
+const changeTheme = () => { 
+  let theme = document.getElementById("theme");
+  const themeState = localStorage.getItem('theme');
+  console.log(themeState);
+  if (themeState === 'light') {
+    theme.href = "/styles/dark-mode-styles.css";
+    localStorage.setItem('theme', 'dark');
+  } else {
+    theme.href = "/styles/light-mode-styles.css";
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+th.addEventListener('click', changeTheme);
 
 
 

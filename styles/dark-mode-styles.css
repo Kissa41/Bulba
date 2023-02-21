@@ -46,13 +46,13 @@ body{
 }
 .arrow{
     height: 7px;
-    background-image: url(../bulba-additions/arrow-dark.svg);
+    background-image: url(/assets/arrow-dark.svg);
 }
 .footer-links a{
     color: #a4a4a4;
 }
 .theme-icon{
-    background-image: url(../bulba-additions/sun-icon.svg);
+    background-image: url(/assets/sun-icon.svg);
 }input{
     color: var(--var-body-dark-fc);
 }

@@ -42,7 +42,7 @@ nav .phone-number {
     justify-content: end;
 }
 
-.container-fluid {
+.container-fluid, .tiktok-content, .video-content, .audio-content {
     width: 70%;
     margin: 0 auto !important;
 }
@@ -209,7 +209,7 @@ input[type="checkbox"]:checked ~ .check:after{
     margin-left: 7px;
     width: 16px;
     height: 16px;
-    background-image: url(../bulba-additions/moon-icon.svg);
+    background-image: url(/assets/moon-icon.svg);
 }
 .video-box {
     position: relative;
@@ -317,7 +317,7 @@ input[type="checkbox"]:checked ~ .check:after{
     display: flex;
     justify-content: center;
     align-items: end;
-    background-image: url(../bulba-additions/aboutUs-img.jpeg);
+    background-image: url(/assets/aboutUs-img.jpeg);
     background-size: cover;
 }
 
@@ -387,17 +387,17 @@ input[type="checkbox"]:checked ~ .check:after{
 
 .img1,
 .img1:after {
-    background-image: url(../bulba-additions/micro-img.jpeg);
+    background-image: url(/assets/micro-img.jpeg);
 }
 
 .img2,
 .img2:after {
-    background-image: url(../bulba-additions/video-img.jpeg);
+    background-image: url(/assets/video-img.jpeg);
 }
 
 .img3,
 .img3:after {
-    background-image: url(../bulba-additions/tiktok-img.jpeg);
+    background-image: url(/assets/tiktok-img.jpeg);
 }
 
 .service-img-text-container {
@@ -495,7 +495,7 @@ input[type="checkbox"]:checked ~ .check:after{
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url(../bulba-additions/player-button-img.svg);
+    background-image: url(/assets/player-button-img.svg);
     transform: translate(-50%, -50%);
     height: 70px;
     width: 70px;
@@ -650,6 +650,7 @@ footer,
     display: flex;
     column-gap: 73px;
     padding-top: 75px;
+    justify-content: center;
 }
 
 .leave-your-contacts h1 {
@@ -675,7 +676,7 @@ footer,
 .contacts-img {
     width: 519px;
     height: 783px;
-    background-image: url(../bulba-additions/contacts-img.svg);
+    background-image: url(/assets/contacts-img.svg);
     background-size: cover;
 }
 
@@ -696,6 +697,9 @@ footer,
     outline: none;
     padding: 0 20px;
     margin-bottom: 16px;
+}
+#phone{
+    border-radius: 12px;
 }
 
 .phone-container {
@@ -787,7 +791,7 @@ footer,
 .arrow {
     width: 10px;
     height: 6px;
-    background-image: url(../bulba-additions/arrow.svg);
+    background-image: url(/assets/arrow.svg);
     background-size: cover;
     margin-left: 5px;
 }
@@ -835,11 +839,116 @@ footer {
 .footer-img {
     width: 130px;
     height: 74px;
-    background-image: url(../bulba-additions/logobulba.svg);
+    background-image: url(/assets/logobulba.svg);
     background-size: cover;
+}
+.audio-content{
+    width: 1175px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    column-gap: 40px;
+}
+.audio-img{
+    background-image: url(/assets/micro.jpeg);
+    width: 561px;
+    height: 543px;
+    background-size: cover;
+    border-radius: 30px;
+    background-position: top;
+}
+.audio-content-text{
+    height: 100%;
+    width: 50%;
+    padding-top: 90px;
+}
+.audio-content-text h1{
+    font-size: 52px;
+    font-weight: 600;
+}
+.audio-content-text p, .audio-content-text li{
+    font-size: 24px;
+}
+.audio-content-text ul, .tiktok-content-text ul, .video-content-list ul{
+    list-style-image: url(/assets/logo-favicon.svg);
+}
+.audio-content-text li{
+    padding-left: 10px;
+}
+
+.tiktok-content{
+    width: 1175px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    column-gap: 40px;
+}
+.tiktok-img{
+    background-image: url(/assets/tiktok.jpeg);
+    width: 529px;
+    height: 575px;
+    background-size: cover;
+    border-radius: 30px;
+    background-position: top;
+}
+.tiktok-content-text{
+    width: 50%;
+    padding-top: 90px;
+}
+.tiktok-content-text h1{
+    font-size: 52px;
+    font-weight: 600;
+}
+.tiktok-content-text p, .tiktok-content-text li{
+    font-size: 24px;
+}
+
+.video-content{
+    width: 1175px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    column-gap: 40px;
+    flex-direction: column;
+}
+.video-img{
+    background-image: url(/assets/video.jpeg);
+    width: 602px;
+    height: 409px;
+    background-size: cover;
+    border-radius: 30px;
+    background-position: top;
+}
+.video-content-text{
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.video-content-header{
+    width: 50%;
+    padding-top: 100px;
+    margin-right: 50px;
+}
+.video-content-text h1{
+    font-size: 52px;
+    font-weight: 600;
+}
+.video-content-text p, li{
+    font-size: 24px;
+}
+.video-content-list{
+    display: flex;
+    column-gap: 20px;
+}
+.video-content-list li, .tiktok-content-text li, .audio-content-text li{
+padding: 0 0 10px 10px;
 }
 
 @media screen and (max-width: 1500px) {
+    .audio-content{
+        width: 80%;
+    }
     .container-fluid {
         width: 83%;
     }
@@ -847,6 +956,16 @@ footer {
         height: 100%;
         width: auto;
     }
+    .tiktok-content{
+        width: 80%;
+    }
+    .video-content{
+        width: 80%;
+    }
+    .navbar-nav{
+        column-gap: 30px;
+    }
+
 }
 @media screen and (max-width: 1250px) {
 
@@ -875,6 +994,20 @@ footer {
         height: 100%;
         width: auto;
     }
+    .second-list{
+        margin-top: -15px;
+    }
+    .tiktok-content-text h1{
+        margin-bottom: 20px;
+    }
+    .tiktok-content-text p, .video-content-header p, .audio-content-text p{
+        margin: 30px 0;
+    }
+    .audio-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 70px;
+    }
 }
 
 @media screen and (max-width: 955px) {
@@ -885,6 +1018,9 @@ footer {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1250px) {
+    .audio-content{
+        width: 90%;
+   }
     .container-fluid {
         width: 100%;
     }
@@ -892,7 +1028,7 @@ footer {
         margin-left: 7%;
     }
     .navbar-nav{
-        column-gap: 33px;
+        column-gap: 27px;
     }
     .video-text-content h1 {
         font-size: 48px;
@@ -917,7 +1053,7 @@ footer {
     .aboutUs-img {
         position: relative;
         max-width: 100%;
-        background-image: url(../bulba-additions/aboutUs-img.jpeg);
+        background-image: url(/assets/aboutUs-img.jpeg);
     }
 
     .aboutUs-img:after {
@@ -947,6 +1083,33 @@ footer {
     .clients {
         width: 960px;
     }
+    .tiktok-content{
+        width: 90%;
+    }
+    .tiktok-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 70px;
+    }
+    .video-content{
+        width: 90%;
+    }
+    .video-content{
+        padding-top: 30px;
+    }
+    .video-content-header{
+        padding-top: 70px;
+        margin: 0;
+    }
+    .video-content, .video-content-list{
+        flex-direction: column;
+    }
+    .video-content-text, .video-content{
+        align-items: center;
+    }
+    .video-content-text{
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1250px) {
@@ -967,17 +1130,17 @@ footer {
 
     .img1,
     .img1:after {
-        background-image: url(../bulba-additions/micro.jpeg);
+        background-image: url(/assets/micro.jpeg);
     }
 
     .img2,
     .img2:after {
-        background-image: url(../bulba-additions/video.jpeg);
+        background-image: url(/assets/video.jpeg);
     }
 
     .img3,
     .img3:after {
-        background-image: url(../bulba-additions/tiktok.jpeg);
+        background-image: url(/assets/tiktok.jpeg);
     }
 
     .service-img-text-container {
@@ -992,6 +1155,7 @@ footer {
     .services-img:after {
         content: none;
     }
+
 }
 
 @media screen and (min-width: 980px) and (max-width: 1250px) {
@@ -1044,7 +1208,12 @@ footer {
     .clients {
         width: 560px;
     }
-
+    .video-content-text h1{
+        font-size: 45px;
+    }
+    .video-content-header, .tiktok-content-text, .audio-content-text{
+        width: 500px;
+    }
 }
 @media screen and (max-width: 761px) {
     .slider h1 {
@@ -1072,7 +1241,7 @@ footer {
     .preview .player-button {
         width: 40px;
         height: 40px;
-        background-image: url(../bulba-additions/player-button-min.svg);
+        background-image: url(/assets/player-button-min.svg);
     }
 
     .swiper-button-next:after,
@@ -1099,7 +1268,7 @@ footer {
         font-size: 14px;
     }
 
-    .container-fluid {
+    .container-fluid, .tiktok-content, .video-content, .audio-content {
         width: 95%;
     }
 
@@ -1192,80 +1361,129 @@ footer {
         flex-direction: column;
         row-gap: 20px;
     }
-
     .phone-container {
         display: flex;
         justify-content: space-between;
     }
-
     .phone-container input {
         width: 75%;
     }
-
     .country-select {
         width: 35%;
     }
-
     .aboutUs-container {
         flex-direction: column;
         width: 80%;
         height: 700px;
     }
-
     .aboutUs-text {
         width: 100%;
         display: block;
         margin-bottom: 30px;
         height: 50%;
     }
-
     .aboutUs-text p {
         font-size: 16px;
     }
-
     .aboutUs-text h1 {
         font-size: 36px;
     }
-
     .aboutUs-img .aboutUs-text-2 {
         display: none;
     }
-
     .services-content {
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
     }
-
     .services-img {
         width: 319px;
         height: 490px;
     }
-
     .services-img:after {
         content: none;
     }
-
     .slider h1 {
         width: 350px;
     }
-
     .swiper-slide iframe,
     .preview {
         width: 350px;
         height: 200px;
     }
-
     .wrapper {
         height: 350px;
     }
-
     .preview {
         top: 21.4%;
     }
-
     .textSwiper {
         width: 300px;
+    }
+    .tiktok-content-text ul, .video-content-list ul, .audio-content-text ul{
+        list-style-image: url(/assets/small-favicon-img.svg);
+    }
+    .tiktok-img{
+        width: 320px;
+        height: 344px;
+    }
+    .tiktok-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .tiktok-content-text{
+        padding-top: 40px;
+    }
+    .tiktok-content-text, .video-content-header, .audio-content-text{
+        width: 350px;
+        padding-left: 30px;
+        margin: 0;
+    }
+    .tiktok-content-text h1{
+        font-size: 34px;
+    }
+    .tiktok-content-text p, .tiktok-content-text li{
+        font-size: 18px;
+    }
+    .video-content-text, .audio-content-text{
+        padding-top: 40px;
+    }
+    .video-content-text h1{
+        font-size: 35px;
+    }
+    .video-content-text p, li{
+        font-size: 18px;
+    }
+    .video-img{
+        width: 320px;
+        height: 350px;
+        background-position: center;
+    }
+    .video-content{
+        padding-top: 30px;
+    }
+    .video-content-header{
+        padding-top: 70px;
+    }
+    .video-content, .video-content-list{
+        flex-direction: column;
+    }
+    .video-content-text, .video-content{
+        align-items: center;
+    }
+    .video-content-text{
+        flex-direction: column-reverse;
+    }
+    .audio-img{
+        width: 320px;
+        height: 344px;
+    }
+    .audio-content-text h1{
+        font-size: 36px;
+    }
+    .audio-content-text p, .audio-content-text li{
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 400px) {
