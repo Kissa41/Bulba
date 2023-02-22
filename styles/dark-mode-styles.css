@@ -41,7 +41,7 @@ body{
     color: var(--var-body-dark-fc);
     background-color: var(--var-body-dark-bg);
 }
-#name, #email, #comment, .phone-container{
+.form-input, .phone-container{
     background-color: var(--var-card-dark-bg);
 }
 .arrow{
@@ -53,6 +53,12 @@ body{
 }
 .theme-icon{
     background-image: url(/assets/sun-icon.svg);
-}input{
+}.form-input{
     color: var(--var-body-dark-fc);
+}
+#toDiscuss, .form-button, #moreInfo{
+    box-shadow: 0 3px 5px #260009;
+}
+.form-button:active, #moreInfo:active, #toDiscuss:active{
+    box-shadow: 0 2px 0 #260009;
 }

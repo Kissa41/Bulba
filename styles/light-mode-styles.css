@@ -1,10 +1,10 @@
-:root{
+:root {
     --var-body-bg: #FFF;
     --var-body-fc: #1f1f1f;
     --var-card-bg: #ebebeb;
     --var-main-fc: #fb1e53;
-    --var-hover-fc: #00E590;
 }
+
 *,
 *::before,
 *::after {
@@ -16,21 +16,24 @@
     font-family: 'Arial', Arial, sans-serif;
 }
 
-body{
+body {
     color: var(--var-body-fc);
     background-color: var(--var-body-bg);
     transition: all .3s ease;
 }
 
-.font-pt{
+.font-pt {
     font-family: 'PT sans';
 }
-.font-int{
+
+.font-int {
     font-family: 'Roboto', sans-serif;
 }
-.smoothie{
+
+.smoothie {
     -webkit-font-smoothing: antialiased;
 }
+
 nav .phone-number {
     font-size: 22px;
 }
@@ -42,7 +45,10 @@ nav .phone-number {
     justify-content: end;
 }
 
-.container-fluid, .tiktok-content, .video-content, .audio-content {
+.container-fluid,
+.tiktok-content,
+.video-content,
+.audio-content {
     width: 70%;
     margin: 0 auto !important;
 }
@@ -148,12 +154,13 @@ nav .phone-number {
     background-color: var(--var-main-fc);
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     -webkit-appearance: none;
     visibility: hidden;
     display: none;
 }
-.check{
+
+.check {
     position: relative;
     display: block;
     width: 40px;
@@ -164,12 +171,14 @@ input[type="checkbox"]{
     overflow: hidden;
     transition: ease-in 0.5s;
 }
-input[type="checkbox"]:checked ~ .check{
+
+input[type="checkbox"]:checked~.check {
     background: #fff;
     border: 1px solid #262626;
 
 }
-.check:before{
+
+.check:before {
     content: '';
     position: absolute;
     top: 2px;
@@ -180,10 +189,12 @@ input[type="checkbox"]:checked ~ .check{
     border-radius: 50%;
     transition: 0.5s;
 }
-input[type="checkbox"]:checked ~ .check:before{
+
+input[type="checkbox"]:checked~.check:before {
     transform: translateX(-50px);
 }
-.check:after{
+
+.check:after {
     content: '';
     position: absolute;
     top: 1px;
@@ -195,22 +206,26 @@ input[type="checkbox"]:checked ~ .check:before{
     transition: 0.5s;
     transform: translateX(50px);
 }
-input[type="checkbox"]:checked ~ .check:after{
+
+input[type="checkbox"]:checked~.check:after {
     transform: translateX(0px);
 }
-.theme{
+
+.theme {
     display: flex;
     width: 65px;
     justify-content: space-between;
     align-items: center;
     margin-left: 9%;
 }
-.theme-icon{
+
+.theme-icon {
     margin-left: 7px;
     width: 16px;
     height: 16px;
     background-image: url(/assets/moon-icon.svg);
 }
+
 .video-box {
     position: relative;
     max-width: calc(100% - 3em);
@@ -252,7 +267,8 @@ input[type="checkbox"]:checked ~ .check:after{
     align-items: center;
     z-index: 1;
 }
-.video-text-content h1{
+
+.video-text-content h1 {
     font-size: 54px;
 }
 
@@ -261,9 +277,15 @@ input[type="checkbox"]:checked ~ .check:after{
     font-size: 22px;
     font-weight: 300;
 }
-
+#toDiscuss{
+    box-shadow: 0 3px 5px #9b1131;
+}
+#toDiscuss:active{
+    top: 3;
+    box-shadow: 0 2px 5px #9b1131;
+}
 #toDiscuss,
-#toSend {
+.form-button {
     background-color: var(--var-main-fc);
     width: 275px;
     height: 72px;
@@ -273,12 +295,14 @@ input[type="checkbox"]:checked ~ .check:after{
     font-size: 18px;
     border: none;
     outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
 }
 
 #toDiscuss:hover {
-    background-color: var(--var-hover-fc);
-    color: black;
-    transition: 0.3s;
+    background-color: #a71436;
+    transition: background-color 0.5s ease 0s;
 }
 
 .aboutUs-container {
@@ -299,6 +323,7 @@ input[type="checkbox"]:checked ~ .check:after{
 .aboutUs-text-2 {
     display: none;
 }
+
 .aboutUs-text p {
     font-size: 22px;
 }
@@ -431,12 +456,18 @@ input[type="checkbox"]:checked ~ .check:after{
     outline: none;
     color: #fff;
     font-size: 24px;
+    box-shadow: 0 3px 5px #9b1131;
+    position: relative;
+    top: 0;
+}
+#moreInfo:active{
+    top: 3;
+    box-shadow: 0 2px 5px #9b1131;
 }
 
 #moreInfo:hover {
-    background-color: var(--var-hover-fc);
-    color: black;
-    transition: 0.3s;
+    background-color: #a71436;
+    transition: background-color 0.5s ease 0s;
 }
 
 .slider {
@@ -611,10 +642,6 @@ footer,
     font-weight: 700;
 }
 
-.toGreen {
-    color: rgb(0, 145, 29);
-}
-
 .partner-finClub {
     font-size: 52px;
     padding: 0 48px 0 40px;
@@ -682,24 +709,65 @@ footer,
 
 .form {
     padding-top: 54px;
-    width: 560px;
+    max-width: 560px;
 }
 
-#name,
-#email,
-#comment,
-.phone-container {
-    width: 100%;
-    height: 55px;
+.form-item {
+    margin: 0 0 20px 0;
+}
+
+.form-label {
+    margin: 0 0 10px 0;
+    display: block;
+    font-size: 18px;
+}
+.form-input, .phone-container{
     border-radius: 12px;
+    height: 55px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 18px;
     background-color: rgb(235, 235, 235);
     border: none;
     outline: none;
-    padding: 0 20px;
-    margin-bottom: 16px;
+    transition: all 0.5s ease 0s;
 }
-#phone{
-    border-radius: 12px;
+
+textarea.form-input{
+    min-height: 120px;
+    max-height: 500px;
+    resize: vertical;
+    padding: 20px;
+    transition: all 0s ease 0s;
+}
+
+.form-input:focus{
+box-shadow: 0 0 10px #7a7b7a;
+}
+
+.form-input._error{
+    box-shadow: 0 0 10px red;
+}
+
+.form{
+    position: relative;
+}
+
+.form::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff90 url("/assets/loading.gif") center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.form._sending::after{
+    opacity: 1;
+    visibility: visible;
 }
 
 .phone-container {
@@ -709,15 +777,13 @@ footer,
     padding: 0;
     padding-left: 10px;
     position: relative;
+    justify-content: space-between;
 }
 
 .phone-container input {
-    width: 83%;
+    width: 81%;
     height: 100%;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 4px 6px;
+    padding-left: 10px;
 }
 
 .country-select {
@@ -782,12 +848,14 @@ footer,
     width: 21px;
     margin-top: 4px;
 }
-.country{
+
+.country {
     display: flex;
     align-items: center;
     width: 45px;
     padding-left: 10px;
 }
+
 .arrow {
     width: 10px;
     height: 6px;
@@ -802,11 +870,21 @@ footer,
     padding-left: 5px;
 }
 
-#toSend {
+.form-button {
     width: 100%;
     height: 55px;
     margin-top: 25px;
-    font-weight: 500;
+    box-shadow: 0 3px 5px #9b1131;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.form-button:active{
+    top: 3;
+    box-shadow: 0 1px 5px #9b1131;
+}
+.form-button:hover{
+    background-color: #a71436;
+    transition: background-color 0.5s ease 0s;
 }
 
 footer {
@@ -842,14 +920,16 @@ footer {
     background-image: url(/assets/logobulba.svg);
     background-size: cover;
 }
-.audio-content{
+
+.audio-content {
     width: 1175px;
     margin: auto;
     padding-top: 50px;
     display: flex;
     column-gap: 40px;
 }
-.audio-img{
+
+.audio-img {
     background-image: url(/assets/micro.jpeg);
     width: 561px;
     height: 543px;
@@ -857,33 +937,42 @@ footer {
     border-radius: 30px;
     background-position: top;
 }
-.audio-content-text{
+
+.audio-content-text {
     height: 100%;
     width: 50%;
     padding-top: 90px;
 }
-.audio-content-text h1{
+
+.audio-content-text h1 {
     font-size: 52px;
     font-weight: 600;
 }
-.audio-content-text p, .audio-content-text li{
+
+.audio-content-text p,
+.audio-content-text li {
     font-size: 24px;
 }
-.audio-content-text ul, .tiktok-content-text ul, .video-content-list ul{
+
+.audio-content-text ul,
+.tiktok-content-text ul,
+.video-content-list ul {
     list-style-image: url(/assets/logo-favicon.svg);
 }
-.audio-content-text li{
+
+.audio-content-text li {
     padding-left: 10px;
 }
 
-.tiktok-content{
+.tiktok-content {
     width: 1175px;
     margin: auto;
     padding-top: 50px;
     display: flex;
     column-gap: 40px;
 }
-.tiktok-img{
+
+.tiktok-img {
     background-image: url(/assets/tiktok.jpeg);
     width: 529px;
     height: 575px;
@@ -891,19 +980,23 @@ footer {
     border-radius: 30px;
     background-position: top;
 }
-.tiktok-content-text{
+
+.tiktok-content-text {
     width: 50%;
     padding-top: 90px;
 }
-.tiktok-content-text h1{
+
+.tiktok-content-text h1 {
     font-size: 52px;
     font-weight: 600;
 }
-.tiktok-content-text p, .tiktok-content-text li{
+
+.tiktok-content-text p,
+.tiktok-content-text li {
     font-size: 24px;
 }
 
-.video-content{
+.video-content {
     width: 1175px;
     margin: auto;
     padding-top: 50px;
@@ -911,7 +1004,8 @@ footer {
     column-gap: 40px;
     flex-direction: column;
 }
-.video-img{
+
+.video-img {
     background-image: url(/assets/video.jpeg);
     width: 602px;
     height: 409px;
@@ -919,54 +1013,69 @@ footer {
     border-radius: 30px;
     background-position: top;
 }
-.video-content-text{
+
+.video-content-text {
     width: 100%;
     padding-top: 90px;
     display: flex;
     justify-content: space-between;
 }
-.video-content-header{
+
+.video-content-header {
     width: 50%;
     padding-top: 100px;
     margin-right: 50px;
 }
-.video-content-text h1{
+
+.video-content-text h1 {
     font-size: 52px;
     font-weight: 600;
 }
-.video-content-text p, li{
+
+.video-content-text p,
+li {
     font-size: 24px;
 }
-.video-content-list{
+
+.video-content-list {
     display: flex;
     column-gap: 20px;
 }
-.video-content-list li, .tiktok-content-text li, .audio-content-text li{
-padding: 0 0 10px 10px;
+
+.video-content-list li,
+.tiktok-content-text li,
+.audio-content-text li {
+    padding: 0 0 10px 10px;
 }
 
 @media screen and (max-width: 1500px) {
-    .audio-content{
+    .audio-content {
         width: 80%;
     }
+
     .container-fluid {
         width: 83%;
     }
+
     .video-box video {
         height: 100%;
         width: auto;
     }
-    .tiktok-content{
+
+    .tiktok-content {
         width: 80%;
     }
-    .video-content{
+
+    .video-content {
         width: 80%;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         column-gap: 30px;
     }
 
 }
+
 @media screen and (max-width: 1250px) {
 
     .swiper-slide iframe,
@@ -990,20 +1099,27 @@ padding: 0 0 10px 10px;
     .swiper-button-prev {
         left: var(--swiper-navigation-sides-offset, 6%);
     }
+
     .video-box video {
         height: 100%;
         width: auto;
     }
-    .second-list{
+
+    .second-list {
         margin-top: -15px;
     }
-    .tiktok-content-text h1{
+
+    .tiktok-content-text h1 {
         margin-bottom: 20px;
     }
-    .tiktok-content-text p, .video-content-header p, .audio-content-text p{
+
+    .tiktok-content-text p,
+    .video-content-header p,
+    .audio-content-text p {
         margin: 30px 0;
     }
-    .audio-content{
+
+    .audio-content {
         flex-direction: column-reverse;
         align-items: center;
         padding-top: 70px;
@@ -1018,18 +1134,22 @@ padding: 0 0 10px 10px;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1250px) {
-    .audio-content{
+    .audio-content {
         width: 90%;
-   }
+    }
+
     .container-fluid {
         width: 100%;
     }
-    .theme{
+
+    .theme {
         margin-left: 7%;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         column-gap: 27px;
     }
+
     .video-text-content h1 {
         font-size: 48px;
     }
@@ -1083,31 +1203,41 @@ padding: 0 0 10px 10px;
     .clients {
         width: 960px;
     }
-    .tiktok-content{
+
+    .tiktok-content {
         width: 90%;
     }
-    .tiktok-content{
+
+    .tiktok-content {
         flex-direction: column-reverse;
         align-items: center;
         padding-top: 70px;
     }
-    .video-content{
+
+    .video-content {
         width: 90%;
     }
-    .video-content{
+
+    .video-content {
         padding-top: 30px;
     }
-    .video-content-header{
+
+    .video-content-header {
         padding-top: 70px;
         margin: 0;
     }
-    .video-content, .video-content-list{
+
+    .video-content,
+    .video-content-list {
         flex-direction: column;
     }
-    .video-content-text, .video-content{
+
+    .video-content-text,
+    .video-content {
         align-items: center;
     }
-    .video-content-text{
+
+    .video-content-text {
         flex-direction: column-reverse;
     }
 }
@@ -1170,22 +1300,27 @@ padding: 0 0 10px 10px;
 }
 
 @media screen and (max-width: 991px) {
-    .theme{
+    .theme {
         margin: 0 20px 0 0;
     }
-    .container-fluid{
+
+    .container-fluid {
         padding: 0 20px;
     }
+
     .slider h1 {
         width: 760px;
     }
+
     .navbar-toggler {
         order: 1;
     }
-    .partner-description{
+
+    .partner-description {
         font-size: 16px;
         line-height: 19px;
     }
+
     #navbarSupportedContent {
         padding: 30px 0;
         order: 1;
@@ -1208,13 +1343,18 @@ padding: 0 0 10px 10px;
     .clients {
         width: 560px;
     }
-    .video-content-text h1{
+
+    .video-content-text h1 {
         font-size: 45px;
     }
-    .video-content-header, .tiktok-content-text, .audio-content-text{
+
+    .video-content-header,
+    .tiktok-content-text,
+    .audio-content-text {
         width: 500px;
     }
 }
+
 @media screen and (max-width: 761px) {
     .slider h1 {
         width: 600px;
@@ -1268,7 +1408,10 @@ padding: 0 0 10px 10px;
         font-size: 14px;
     }
 
-    .container-fluid, .tiktok-content, .video-content, .audio-content {
+    .container-fluid,
+    .tiktok-content,
+    .video-content,
+    .audio-content {
         width: 95%;
     }
 
@@ -1298,7 +1441,7 @@ padding: 0 0 10px 10px;
         width: 320px;
     }
 
-    .partner-description{
+    .partner-description {
         font-size: 16px;
         padding: 0;
         line-height: 23px;
@@ -1361,137 +1504,182 @@ padding: 0 0 10px 10px;
         flex-direction: column;
         row-gap: 20px;
     }
+
     .phone-container {
         display: flex;
         justify-content: space-between;
     }
-    .phone-container input {
+
+    /* .phone-container input {
         width: 75%;
-    }
+    } */
     .country-select {
         width: 35%;
     }
+
     .aboutUs-container {
         flex-direction: column;
         width: 80%;
         height: 700px;
     }
+
     .aboutUs-text {
         width: 100%;
         display: block;
         margin-bottom: 30px;
         height: 50%;
     }
+
     .aboutUs-text p {
         font-size: 16px;
     }
+
     .aboutUs-text h1 {
         font-size: 36px;
     }
+
     .aboutUs-img .aboutUs-text-2 {
         display: none;
     }
+
     .services-content {
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
     }
+
     .services-img {
         width: 319px;
         height: 490px;
     }
+
     .services-img:after {
         content: none;
     }
+
     .slider h1 {
         width: 350px;
     }
+
     .swiper-slide iframe,
     .preview {
         width: 350px;
         height: 200px;
     }
+
     .wrapper {
         height: 350px;
     }
+
     .preview {
         top: 21.4%;
     }
+
     .textSwiper {
         width: 300px;
     }
-    .tiktok-content-text ul, .video-content-list ul, .audio-content-text ul{
+
+    .tiktok-content-text ul,
+    .video-content-list ul,
+    .audio-content-text ul {
         list-style-image: url(/assets/small-favicon-img.svg);
     }
-    .tiktok-img{
+
+    .tiktok-img {
         width: 320px;
         height: 344px;
     }
-    .tiktok-content{
+
+    .tiktok-content {
         flex-direction: column-reverse;
         align-items: center;
         padding-top: 40px;
     }
-    .tiktok-content-text{
+
+    .tiktok-content-text {
         padding-top: 40px;
     }
-    .tiktok-content-text, .video-content-header, .audio-content-text{
+
+    .tiktok-content-text,
+    .video-content-header,
+    .audio-content-text {
         width: 350px;
         padding-left: 30px;
         margin: 0;
     }
-    .tiktok-content-text h1{
+
+    .tiktok-content-text h1 {
         font-size: 34px;
     }
-    .tiktok-content-text p, .tiktok-content-text li{
+
+    .tiktok-content-text p,
+    .tiktok-content-text li {
         font-size: 18px;
     }
-    .video-content-text, .audio-content-text{
+
+    .video-content-text,
+    .audio-content-text {
         padding-top: 40px;
     }
-    .video-content-text h1{
+
+    .video-content-text h1 {
         font-size: 35px;
     }
-    .video-content-text p, li{
+
+    .video-content-text p,
+    li {
         font-size: 18px;
     }
-    .video-img{
+
+    .video-img {
         width: 320px;
         height: 350px;
         background-position: center;
     }
-    .video-content{
+
+    .video-content {
         padding-top: 30px;
     }
-    .video-content-header{
+
+    .video-content-header {
         padding-top: 70px;
     }
-    .video-content, .video-content-list{
+
+    .video-content,
+    .video-content-list {
         flex-direction: column;
     }
-    .video-content-text, .video-content{
+
+    .video-content-text,
+    .video-content {
         align-items: center;
     }
-    .video-content-text{
+
+    .video-content-text {
         flex-direction: column-reverse;
     }
-    .audio-img{
+
+    .audio-img {
         width: 320px;
         height: 344px;
     }
-    .audio-content-text h1{
+
+    .audio-content-text h1 {
         font-size: 36px;
     }
-    .audio-content-text p, .audio-content-text li{
+
+    .audio-content-text p,
+    .audio-content-text li {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width: 400px) {
     .video-text-content h1 {
         font-size: 25px;
     }
-    .video-text-info{
+
+    .video-text-info {
         font-size: 15px;
     }
 }
-
