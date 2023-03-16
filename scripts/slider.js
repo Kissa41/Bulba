@@ -1,14 +1,43 @@
-const slides = document.querySelectorAll('.preview');
-const frames = document.querySelectorAll('iframe');
+const videoInit = (selector) => {
 
-slides.forEach((el, index) => {
-  el.addEventListener('click', e => {
-    el.style.display = 'none';
-    frames[index].setAttribute('src', frames[index].getAttribute('src') + '?autoplay=1')
+  const videos = document.querySelectorAll(selector);
+  if (videos.length > 0) {
+    videos.forEach(video => {
+      videoGenerate(video);
+    })
+  }
+}
+
+const videoGenerate = (video) => {
+  const btn = video.querySelector('.video-block__button');
+  const videoId = btn.dataset.videoId; 
+  const container = video.querySelector('.preview');
+  
+  btn.addEventListener('mousedown', (event) => {
+    event.stopPropagation()
+    const iframe = iframeGenerate(videoId); 
+
+    container.innerHTML = '';
+    container.appendChild(iframe);
   })
-});
+}
 
-var swiper = new Swiper(".mySwiper", {
+const iframeGenerate = (videoId) => {
+  const iframe = document.createElement('iframe');
+  const src = `https://www.youtube.com/embed/${videoId}?rel=0&showinfo=0&autoplay=1`
+
+  iframe.setAttribute('src', src);
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.classList.add('video-block__content');
+
+  return iframe;
+}
+
+videoInit('.video-block');
+
+const swiper = new Swiper(".mySwiper", {
     speed: 50,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -25,6 +54,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     mousewheel: true,
     keyboard: true,
+    touchStartPreventDefault: false
   });
 
 var textSwiper = new Swiper(".textSwiper", {
@@ -39,4 +69,5 @@ var textSwiper = new Swiper(".textSwiper", {
 
 swiper.controller.control = textSwiper;
 textSwiper.controller.control = swiper;
+
 

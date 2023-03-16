@@ -225,8 +225,11 @@ input[type="checkbox"]:checked~.check:after {
     height: 16px;
     background-image: url(/assets/moon-icon.svg);
 }
-
-.video-box {
+.video-box-2{
+    display: none !important;
+    background: radial-gradient(circle, rgba(237,18,84,1) 0%, rgba(220,37,121,1) 77%);
+}
+.video-box, .video-box-2 {
     position: relative;
     max-width: calc(100% - 3em);
     width: 100%;
@@ -491,51 +494,24 @@ input[type="checkbox"]:checked~.check:after {
     align-items: center;
     position: relative;
 }
-
-.swiper-slide iframe {
-    display: block;
+.video-block__content{
     width: 1160px;
     height: 600px;
-    object-fit: cover;
-    position: relative;
 }
-
-.preview {
-    width: 1160px;
-    height: 600px;
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    transform: translateX(-50%);
-}
-
-.preview .thumbnail {
+.video-block__button{
     position: absolute;
     width: 100%;
     height: 100%;
-    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
-    bottom: 0;
-    background-image: var(--bg-image);
-    background-size: cover;
-    cursor: pointer;
+    border: 0;
+    background-color: transparent;
 }
-
-.preview .player-button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-image: url(/assets/player-button-img.svg);
-    transform: translate(-50%, -50%);
-    height: 70px;
-    width: 70px;
-    transition: .2s;
-    cursor: pointer;
-}
-
-.preview .player-button:hover {
-    transform: translate(-50%, -50%) scale(1.2);
+.preview{
+    position: relative;
 }
 
 .swiper-button-next:after,
@@ -583,15 +559,6 @@ input[type="checkbox"]:checked~.check:after {
     border-top: 1px solid #eee;
     padding: 14px 0;
     margin-top: 10px;
-}
-
-.partners,
-.clients,
-.leave-your-contacts,
-footer,
-.slider h1 {
-    width: 1160px;
-    margin: auto;
 }
 
 .partners-projects {
@@ -676,7 +643,7 @@ footer,
 
 .leave-your-contacts {
     display: flex;
-    column-gap: 73px;
+    column-gap: 60px;
     padding-top: 75px;
     justify-content: center;
     width: 1360px;
@@ -690,7 +657,9 @@ footer,
 .leave-your-contacts h2 a {
     border-bottom: 2px solid var(--var-main-fc);
 }
-
+.leave-your-contacts h2 {
+    font-size: 29px;
+}
 .leave-your-contacts h3 a {
     text-decoration: none;
     color: var(--var-body-fc);
@@ -703,7 +672,7 @@ footer,
 }
 
 .contacts-img {
-    width: 600px;
+    width: 550px;
     height: 858px;
     background-image: url(/assets/contacts-img.svg);
     background-size: cover;
@@ -754,27 +723,6 @@ textarea.form-input, textarea.brief-input{
 }
 .form-input._error{
     box-shadow: 0 0 10px red;
-}
-
-.form{
-    position: relative;
-}
-
-.form::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff90 url("/assets/loading.gif") center / 50px no-repeat;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease 0s;
-}
-.form._sending::after{
-    opacity: 1;
-    visibility: visible;
 }
 
 .phone-container{
@@ -946,6 +894,19 @@ footer {
     height: 74px;
     background-image: url(/assets/logobulba.svg);
     background-size: cover;
+}
+.footer-img a{
+    display: block;
+    height: 74px;
+}
+
+.partners,
+.clients,
+.leave-your-contacts,
+footer,
+.slider h1 {
+    width: 1160px;
+    margin: auto;
 }
 
 .audio-content {
@@ -1244,7 +1205,6 @@ textarea.brief-input{
     }
 
     .video-box video {
-        height: 100%;
         width: auto;
     }
 
@@ -1264,14 +1224,9 @@ textarea.brief-input{
 
 @media screen and (max-width: 1250px) {
 
-    .swiper-slide iframe,
-    .preview {
+    .video-block__content, .preview{
         width: 760px;
         height: 450px;
-    }
-
-    .preview {
-        top: 12.5%;
     }
 
     .wrapper {
@@ -1287,7 +1242,6 @@ textarea.brief-input{
     }
 
     .video-box video {
-        height: 100%;
         width: auto;
     }
 
@@ -1549,8 +1503,7 @@ textarea.brief-input{
         width: 600px;
     }
 
-    .swiper-slide iframe,
-    .preview {
+    .video-block__content, .preview{
         width: 600px;
         height: 300px;
     }
@@ -1559,18 +1512,13 @@ textarea.brief-input{
         width: 100%;
     }
 
-    .preview {
-        top: 16.7%;
-    }
-
     .wrapper {
         height: 450px;
     }
 
-    .preview .player-button {
+    .preview .video-block__button svg{
         width: 40px;
         height: 40px;
-        background-image: url(/assets/player-button-min.svg);
     }
 
     .swiper-button-next:after,
@@ -1596,7 +1544,12 @@ textarea.brief-input{
         height: 60px;
         font-size: 14px;
     }
-
+    .video-box-2{
+        display: flex !important;
+    }
+    .video-box{
+        display: none;
+    }
     .container-fluid,
     .tiktok-content,
     .video-content,
@@ -1746,18 +1699,13 @@ textarea.brief-input{
         width: 350px;
     }
 
-    .swiper-slide iframe,
-    .preview {
+    .video-block__content, .preview{
         width: 350px;
         height: 200px;
     }
 
     .wrapper {
         height: 350px;
-    }
-
-    .preview {
-        top: 21.4%;
     }
 
     .textSwiper {
@@ -1874,8 +1822,6 @@ textarea.brief-input{
     }
 }
 
-
-
 @media screen and (max-width: 400px) {
     .video-text-content h1 {
         font-size: 25px;
@@ -1883,5 +1829,8 @@ textarea.brief-input{
 
     .video-text-info {
         font-size: 15px;
+    }
+    .clients{
+        width: 355px;
     }
 }

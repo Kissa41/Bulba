@@ -15,19 +15,17 @@
     content="Продакшн-студия полного цикла BulbaMedia. Создание аудио, видео контента. Создание и ведение TikTok аккаунтов" />
   <meta property="og:type" content="website" />
   <meta property="og:image"
-    content="https://drive.google.com/file/d/1eZOE1cZthgJkWt5rzdPVsi56eeT2svc2/view?usp=sharing" />
-  <link rel="icon" type="image/x-icon" href="/assets/logo-favicon.svg" />
+    content="../assets/logobulba.svg" />
+  <link rel="icon" type="image/x-icon" href="../assets/logo-favicon.svg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/styles/light-mode-styles.css" />
-  <link rel="stylesheet" href="/styles/light-mode-styles.css" id="theme" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  <link rel="stylesheet" href="../styles/light-mode-styles.css" />
+  <link rel="stylesheet" href="../styles/light-mode-styles.css" id="theme" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <script defer src="/scripts/script.js"></script>
+  <script defer src="../scripts/script.js"></script>
   <title>BulbaMedia</title>
 </head>
 
@@ -36,7 +34,7 @@
     <div class="container-fluid">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="/assets/logobulba.svg" alt="Company" />
+          <img src="../assets/logobulba.svg" alt="Company" />
         </a>
       </div>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -80,7 +78,7 @@
 
   <div class="video-box">
     <video autoplay muted loop>
-      <source src="/assets/videoplayback.mp4" />
+      <source src="../assets/videoplayback.mp4" />
     </video>
     <div class="video-text-content">
       <h1 class="font-int">
@@ -94,7 +92,25 @@
       <div class="video-text-info smoothie font-int">
         Создание аудио, видео контента. Создание и ведение TikTok аккаунтов.
       </div>
-      <button id="toDiscuss" class="font-int" onclick="document.location='/indexes/brief-index.html '">
+      <button id="toDiscuss" class="font-int" onclick="document.location='../indexes/brief-index.html '">
+        ОБСУДИТЬ ПРОЕКТ
+      </button>
+    </div>
+  </div>
+  <div class="video-box-2">
+    <div class="video-text-content">
+      <h1 class="font-int">
+        Продакшн-студия полного
+        <br />
+        <br />
+        цикла BulbaMedia
+        <br />
+        <br />
+      </h1>
+      <div class="video-text-info smoothie font-int">
+        Создание аудио, видео контента. Создание и ведение TikTok аккаунтов.
+      </div>
+      <button id="toDiscuss" class="font-int" onclick="document.location='../indexes/brief-index.html '">
         ОБСУДИТЬ ПРОЕКТ
       </button>
     </div>
@@ -132,7 +148,7 @@
       <div class="services-img img1">
         <div class="service-img-text-container smoothie">
           <h3>Создание аудио контента</h3>
-          <button id="moreInfo" onclick="document.location='/indexes/audio-index.html'">
+          <button id="moreInfo" onclick="document.location='../indexes/audio-index.html'">
             Подробнее
           </button>
         </div>
@@ -140,7 +156,7 @@
       <div class="services-img img2">
         <div class="service-img-text-container smoothie">
           <h3>Создание видео контента</h3>
-          <button id="moreInfo" onclick="document.location='/indexes/video-index.html'">
+          <button id="moreInfo" onclick="document.location='../indexes/video-index.html'">
             Подробнее
           </button>
         </div>
@@ -148,7 +164,7 @@
       <div class="services-img img3">
         <div class="service-img-text-container smoothie">
           <h3>Создание и ведение TikTok аккаунта</h3>
-          <button id="moreInfo" onclick="document.location='/indexes/tiktok-index.html'">
+          <button id="moreInfo" onclick="document.location='../indexes/tiktok-index.html'">
             Подробнее
           </button>
         </div>
@@ -161,105 +177,115 @@
     <div class="wrapper">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/JRNVqyqHDDo" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew1.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew1.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="JRNVqyqHDDo">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/Ij12sC6IW1w" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew2.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew2.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="Ij12sC6IW1w">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/z0rLs2ff8Qs" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew3.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew3.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="z0rLs2ff8Qs">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/Jdi9s6DMmN8" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew4.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew4.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="18n_4U2k2D4">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/fNASzM1pnQA" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew5.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew5.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="fNASzM1pnQA">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/F_AHYqUFEqo" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew6.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew6.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="F_AHYqUFEqo">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/j97-HGPdTTA"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew7.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew7.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="j97-HGPdTTA">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lISf78xQy3w"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew8.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew8.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="lISf78xQy3w">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/5D3zqYyNu5o" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew9.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew9.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="5D3zqYyNu5o">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/-J3SKvo9ZZU" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew10.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew10.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="-J3SKvo9ZZU">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/PYEn-72sn7Q" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="swiper-slide video-block">
             <div class="preview">
-              <img src="/assets/thumbnails/prew11.png" class="thumbnail" alt="video-preview"/>
-              <img src="/assets/player-button-img.svg" class="player-button" alt="video-button" />
+              <img src="../assets/thumbnails/prew11.webp" class="thumbnail video-block__content" alt="video-preview"/>
+              <button class="video-block__button" data-video-id="PYEn-72sn7Q">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 70.0938C54.33 70.0938 70 54.4237 70 35.0938C70 15.7638 54.33 0.09375 35 0.09375C15.67 0.09375 0 15.7638 0 35.0938C0 54.4237 15.67 70.0938 35 70.0938ZM28 23.4271L47.8333 35.6771L28 47.9271V23.4271Z" fill="#FB1E53"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -291,7 +317,7 @@
     <h1 class="partners-projects">Партнерские проекты</h1>
     <div class="partner-container">
       <div class="partner-item">
-        <img width="224px" height="60px" src="/assets/partners-1.png" alt="our-partners" />
+        <img width="224px" height="60px" src="../assets/partners-1.webp" alt="our-partners" />
         <div class="partner-item-content">
           <div class="partner-name">Бизнес пробуждение</div>
           <div class="partner-description smoothie">
@@ -303,7 +329,7 @@
         </div>
       </div>
       <div class="partner-item">
-        <img width="240px" height="70px" src="/assets/partners-2.svg" alt="our-partners" />
+        <img width="240px" height="70px" src="../assets/partners-2.svg" alt="our-partners" />
         <div class="partner-item-content">
           <div class="partner-name">Про бизнес</div>
           <div class="partner-description">
@@ -316,7 +342,7 @@
         </div>
       </div>
       <div class="partner-item">
-        <img width="224px" height="60px" src="/assets/partners-3.png" alt="our-partners" />
+        <img width="224px" height="60px" src="../assets/partners-3.webp" alt="our-partners" />
         <div class="partner-item-content">
           <div class="partner-name">Visa Platinum</div>
           <div class="partner-description">
@@ -336,34 +362,31 @@
     <h1 class="our-clients">Наши клиенты</h1>
     <div class="clients-container">
       <div class="client-content">
-        <img width="130px" height="30px" src="/assets/client-1.png" alt="our-clients" />
+        <img width="130px" height="30px" src="/assets/client-1.webp" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img width="140px" height="50px" src="/assets/client-2.png" alt="our-clients" />
+        <img width="140px" height="50px" src="../assets/client-2.webp" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img src="/assets/client-3.svg" alt="our-clients" />
+        <img src="../assets/client-3.svg" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img width="160px" height="70px" src="/assets/client-4.png" alt="our-clients" />
+        <img width="160px" height="70px" src="../assets/client-4.webp" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img width="90px" height="90px" src="/assets/client-5.png" alt="our-clients" />
+        <img width="140px" height="50px" src="../assets/client-6.webp" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img width="140px" height="50px" src="/assets/client-6.png" alt="our-clients" />
+        <img width="160px" height="56px" src="../assets/client-7.svg" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img width="160px" height="56px" src="/assets/client-7.svg" alt="our-clients" />
+        <img src="../assets/client-8.svg" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img src="/assets/client-8.svg" alt="our-clients" />
+        <img src="../assets/client-9.svg" alt="our-clients" />
       </div>
       <div class="client-content">
-        <img src="/assets/client-9.svg" alt="our-clients" />
-      </div>
-      <div class="client-content">
-        <img width="140px" height="35px" src="/assets/client-10.png" alt="our-clients" />
+        <img width="140px" height="35px" src="../assets/client-10.webp" alt="our-clients" />
       </div>
     </div>
   </section>
@@ -382,10 +405,10 @@
           <a href="mailto:bulbamedia@mail.ru">bulbamedia@mail.ru</a>
         </h3>
       </div>
-      <form class="form" action="#" method="post" id="sendform" enctype="multipart/form-data">
+      <form class="form" action="sendform.php" method="post" id="sendform" enctype="multipart/form-data">
         <div class="form-item">
           <label class="form-label" for="formName">Ваше имя*</label>
-          <input class="form-input _req" type="text" id="formName" name="name" autocomplete="off" minlength="1" maxlength="60"
+          <input class="form-input _req" type="text" id="formName" name="name" autocomplete="off" minlength="1" maxlength="40"
             placeholder="Александр" required/>
         </div>
         <div class="form-item">
@@ -395,10 +418,10 @@
               <div id="country-select" class="country-select__code">
                 <div class="country">
                   <img id="country-flag"
-                    src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg" alt="country-flag"/>
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg" alt="country-flag"/>
                   <div class="arrow"></div>
                 </div>
-                <div id="phone-code" class="phone-code">+421</div>
+                <div id="phone-code" class="phone-code">+375</div>
               </div>
               <div id="modal" class="country-select__modal"></div>
             </div>
@@ -423,16 +446,16 @@
   <footer>
     <div class="footer-links">
       <a class="smoothie" href="index.html">BulbaMedia — продакшн-студия полного цикла.</a>
-      <a class="smoothie" href="/indexes/audio-index.html">Создание аудио контента</a>
-      <a class="smoothie" href="/indexes/video-index.html">Создание видео контента</a>
-      <a class="smoothie" href="/indexes/tiktok-index.html">Создание и ведение Tik Tok аккаунта</a>
+      <a class="smoothie" href="../indexes/audio-index.html">Создание аудио контента</a>
+      <a class="smoothie" href="../indexes/video-index.html">Создание видео контента</a>
+      <a class="smoothie" href="../indexes/tiktok-index.html">Создание и ведение Tik Tok аккаунта</a>
     </div>
     <div class="footer-img">
       <a href="index.html"></a>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script defer src="/scripts/slider.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="../scripts/slider.js"></script>
 </body>
 
 </html>

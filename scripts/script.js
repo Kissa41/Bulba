@@ -90,7 +90,3 @@ const changeTheme = () => {
 }
 
 th.addEventListener('click', changeTheme);
-
-
-
-
